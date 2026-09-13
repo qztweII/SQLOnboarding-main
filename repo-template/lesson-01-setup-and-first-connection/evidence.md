@@ -2,8 +2,7 @@
 
 ## Commit evidence (minimum 2)
 - Commit 1 hash + message: 4cc0084 created lesson1_connect.py
-- Commit 2 hash + message: 
-- Optional Commit 3 hash + message:
+- Commit 2 hash + message: 7525e66 Changed lesson1_connect.py
 
 ## Run evidence
 - Command run (example: `python lesson1_connect.py`):
@@ -31,6 +30,6 @@ Database closed!
 
 ## Quality checklist
 - [✓] Script runs without unhandled errors
-- [ ] I included at least 2 lesson commits
-- [ ] I included terminal evidence
-- [ ] I answered all questions in my own words
+- [✓] I included at least 2 lesson commits
+- [✓] I included terminal evidence
+- [✓] I answered all questions in my own words
