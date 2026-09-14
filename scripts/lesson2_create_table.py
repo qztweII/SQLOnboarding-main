@@ -1,6 +1,8 @@
 """Lesson 2: Create a table and insert student rows."""
 
 import sqlite3 as sql
+import string
+import random
 
 # Connect Python to the SQLite database file.
 connection = sql.connect("school.db")
@@ -12,6 +14,7 @@ cursor.execute("""
 CREATE TABLE IF NOT EXISTS students (
     id INTEGER PRIMARY KEY,
     name TEXT NOT NULL,
+    favourite_subject TEXT NOT NULL,
     year_group INTEGER
 )
 """)
@@ -20,8 +23,18 @@ CREATE TABLE IF NOT EXISTS students (
 cursor.execute("DELETE FROM students")
 
 # Insert rows using placeholders (?) to safely pass Python values.
-cursor.execute("INSERT INTO students (name, year_group) VALUES (?, ?)", ("Ava", 10))
-cursor.execute("INSERT INTO students (name, year_group) VALUES (?, ?)", ("Leo", 11))
+cursor.execute("INSERT INTO students (name, favourite_subject, year_group) VALUES (?, ?, ?)", ("Ava", "Maths", 10))
+cursor.execute("INSERT INTO students (name, favourite_subject, year_group) VALUES (?, ?, ?)", ("Leo", "PDHPE", 11))
+cursor.execute("INSERT INTO students (name, favourite_subject, year_group) VALUES (?, ?, ?)", ("Evelyn", "Software Engineering", 10))
+subjects = ["Engrish", "Maths", "Software Engineering", "Science", "PDHPE"]
+for i in range(20):
+    name = random.choice(string.ascii_uppercase)
+    for i in range(8):
+        name = name + random.choice(string.ascii_lowercase)
+    year = random.randint(7, 12)
+    subject = random.choice(subjects)
+    cursor.execute("INSERT INTO students (name, favourite_subject, year_group) VALUES (?, ?, ?)", (name, subject, year))
+
 
 # Commit saves all changes made by INSERT/DELETE/CREATE statements.
 connection.commit()
