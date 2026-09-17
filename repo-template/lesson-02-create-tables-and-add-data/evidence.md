@@ -22,9 +22,9 @@ PS C:\Users\terence.wu\Downloads\SQLOnboarding-main\SQLOnboarding-main> python s
 - How I fixed it: This was a python error where as I created the `favourite_subject` column, I had forgotten to edit the `cursor.execute` commands
 
 ## Understanding check (answer in your own words)
-1. Why do we use `commit()`?
-2. What does `PRIMARY KEY` mean?
-3. Why is `IF NOT EXISTS` useful when creating tables?
+1. Why do we use `commit()`? To apply the data to the database
+2. What does `PRIMARY KEY` mean? Each item in this column is to be a unique identifier
+3. Why is `IF NOT EXISTS` useful when creating tables? To avoid errors if the table already exists. 
 
 ## Quality checklist
 - [✓] Script runs without unhandled errors

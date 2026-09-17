@@ -6,11 +6,11 @@ connection = sql.connect("school.db")
 
 cursor = connection.cursor()
 
-cursor.execute("SELECT id, name, year_group FROM students")
+cursor.execute("SELECT * FROM students")
 
 rows = cursor.fetchall()
 
-for row in rows:
-    print(row)
+for student_id, name, favourite_subject, year_group in rows:
+    print(f"{name} is in year {year_group}. {favourite_subject} is favourite subject. ")
 
 connection.close()

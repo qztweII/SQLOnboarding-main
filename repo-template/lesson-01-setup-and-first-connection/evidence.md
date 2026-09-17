@@ -24,9 +24,9 @@ Database closed!
 - How I fixed it: None
 
 ## Understanding check (answer in your own words)
-1. What is the difference between Python and SQLite?
-2. What file was created when the script ran?
-3. What does the connection do?
+1. What is the difference between Python and SQLite? SQLite is the module in Python that runs SQL requests on local files
+2. What file was created when the script ran? school.db
+3. What does the connection do? Links the SQL file to the script so it can interact with it. 
 
 ## Quality checklist
 - [✓] Script runs without unhandled errors
