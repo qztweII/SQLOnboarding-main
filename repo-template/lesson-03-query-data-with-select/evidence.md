@@ -2,7 +2,7 @@
 
 ## Commit evidence (minimum 2)
 - Commit 1 hash + message: d1f84eb Create lesson3_select.py
-- Commit 2 hash + message: 
+- Commit 2 hash + message: 1ece647 lesson3_select now uses all columns of students
 - Optional Commit 3 hash + message:
 
 ## Run evidence
