@@ -1,9 +1,8 @@
 # Lesson 02 Evidence Pro-Forma
 
 ## Commit evidence (minimum 2)
-- Commit 1 hash + message:
-- Commit 2 hash + message:
-- Optional Commit 3 hash + message:
+- Commit 1 hash + message: f634143 Create lesson2_create_table.py
+- Commit 2 hash + message: eaf66fe Created and edited lesson2_create_table.py
 
 ## Run evidence
 - Command run:
