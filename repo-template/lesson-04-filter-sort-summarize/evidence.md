@@ -27,9 +27,9 @@
 - How I fixed it:
 
 ## Understanding check (answer in your own words)
-1. What does `WHERE` do?
+1. What does `WHERE` do? This compares each row and returns any rows that fit the condition
 2. Why is `?` used in the query?
-3. What does `COUNT(*)` tell you in this lesson?
+3. What does `COUNT(*)` tell you in this lesson? The amount of rows in the database
 
 ## Quality checklist
 - [ ] Script runs without unhandled errors
