@@ -1,8 +1,8 @@
 # Lesson 04 Evidence Pro-Forma
 
 ## Commit evidence (minimum 2)
-- Commit 1 hash + message:
-- Commit 2 hash + message:
+- Commit 1 hash + message: 420b0e2 Did basic filter sort summarize
+- Commit 2 hash + message: 
 - Optional Commit 3 hash + message:
 
 ## Run evidence
@@ -27,9 +27,9 @@ Students amount:  23
 - What actually happened:
 
 ## SQL/Python changes I made
-- Change 1:
-- Change 2:
-- Why these changes were mine (not just starter code):
+- Change 1: Changed the query to now output all of the database and order by year (descending) and then by name. 
+- Change 2: Added a feature at the end where the user may input the year they want and displays the amount of students in that year. 
+- Why these changes were mine (not just starter code): The starter code only prints students of a constant year. 
 
 ## Error and fix
 - Error I hit:
@@ -40,7 +40,7 @@ Traceback (most recent call last):
     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 sqlite3.ProgrammingError: parameters are of unsupported type
 ```
-- How I fixed it:
+- How I fixed it: Turns out year_number had to have a comma after it because it turns it into a tuple. 
 
 ## Understanding check (answer in your own words)
 1. What does `WHERE` do? This compares each row and returns any rows that fit the condition

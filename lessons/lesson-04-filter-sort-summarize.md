@@ -81,5 +81,5 @@ connection.close()
 
 ## Exit check
 
-- What does `WHERE` do?
-- Why is `?` used in the query?
+- What does `WHERE` do? Filter rows according to a condition. 
+- Why is `?` used in the query? To make queries much more dynamic by adding variable contents. 
