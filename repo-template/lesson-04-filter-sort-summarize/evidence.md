@@ -2,7 +2,7 @@
 
 ## Commit evidence (minimum 2)
 - Commit 1 hash + message: 420b0e2 Did basic filter sort summarize
-- Commit 2 hash + message: 
+- Commit 2 hash + message: 09f7e93 Added sorting by year group then name
 - Optional Commit 3 hash + message:
 
 ## Run evidence
