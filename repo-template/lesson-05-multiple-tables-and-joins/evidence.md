@@ -27,7 +27,7 @@
 - How I fixed it:
 
 ## Understanding check (answer in your own words)
-1. Why do we use more than one table?
+1. Why do we use more than one table? This is to seperate different types of data as well as seperating different types of requests. 
 2. What is the purpose of `JOIN`?
 3. Which columns connect your two tables?
 
