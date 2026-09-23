@@ -24,36 +24,23 @@ CREATE TABLE IF NOT EXISTS courses (
 cursor.execute('DELETE FROM students')
 cursor.execute('DELETE FROM courses')
 
-cursor.execute(
-    'INSERT INTO students (name, year_group) VALUES (?, ?)',
-    ('Ava', 10)
-)
-ava_id = cursor.lastrowid
+students = [("Ava", 10), ("Leo", 10), ("Evelyn", 10)]
+id = []
 
-cursor.execute(
-    'INSERT INTO students (name, year_group) VALUES (?, ?)',
-    ('Leo', 10)
-)
-leo_id = cursor.lastrowid
+for i in students:
+    cursor.execute(
+        "INSERT INTO students (name, year_group) VALUES (?, ?)", 
+        (i[0], i[1])
+    )
+    id.append(cursor.lastrowid)
 
-cursor.execute(
-    'INSERT INTO students (name, year_group) VALUES (?, ?)', 
-    ('Evelyn', 10)
-)
-evelyn_id = cursor.lastrowid
+courses = ["Science Club", "Math Team", "Software Competition"]
 
-cursor.execute(
-    'INSERT INTO courses (course_name, student_id) VALUES (?, ?)', 
-    ('Science Club', ava_id)
-)
-cursor.execute(
-    'INSERT INTO courses (course_name, student_id) VALUES (?, ?)', 
-    ('Math Team', leo_id)
-)
-cursor.execute(
-    'INSERT INTO courses (course_name, student_id) VALUES (?, ?)', 
-    ('Software thingy', evelyn_id)
-)
+for i in range(len(courses)):
+    cursor.execute(
+        "INSERT INTO courses (course_name, student_id) VALUES (?, ?)" , 
+        (courses[i], id[i])
+    )
 
 cursor.execute('''
 SELECT students.name, courses.course_name
