@@ -2,7 +2,7 @@
 
 ## Commit evidence (minimum 2)
 - Commit 1 hash + message: bd9e5c8 Created lesson6_project.py
-- Commit 2 hash + message: 
+- Commit 2 hash + message: 6ed25a5 Lesson 6 stretch challenges and questions
 - Optional Commit 3 hash + message:
 
 ## Run evidence
@@ -30,7 +30,7 @@ Wonder : R. J. Palacio
 3. What would you add next to improve the app? Delete books from database and a menu option for it. 
 
 ## Quality checklist
-- [ ] Script runs without unhandled errors
-- [ ] I included at least 2 lesson commits
-- [ ] I included mini-project output evidence
-- [ ] I answered all questions in my own words
+- [✓] Script runs without unhandled errors
+- [✓] I included at least 2 lesson commits
+- [✓] I included mini-project output evidence
+- [✓] I answered all questions in my own words
