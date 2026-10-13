@@ -85,5 +85,5 @@ connection.close()
 
 ## Exit check
 
-- Which skills from earlier lessons were reused here?
-- What would you add next to improve the app?
+- Which skills from earlier lessons were reused here? connection, cursor, CREATE, DELETE, INSERT, SELECT, commit, close connection
+- What would you add next to improve the app? Delete books from database and a menu option for it. 
